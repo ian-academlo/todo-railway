@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/users", async (req, res) => {
-  const result = await Users.getAll();
+  const result = await Users.findAll();
   res.status(200).json(result);
 });
 
